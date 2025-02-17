@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@repo/ui": "workspace:*",
     "@paralleldrive/cuid2": "^2.2.2",
     "@rumsan/react-query": "^0.0.70",
     "@rumsan/sdk": "^0.1.152",

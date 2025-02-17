@@ -11,19 +11,18 @@ export default function DynamicCatchAllPage() {
 
   // Handle "/projects" separately (empty slug)
   if (slug.length === 0) {
-    return <Projects />; // Render a landing page for projects
+    return <Projects />;
   }
 
   // Redirect or show 404 if there is only one segment (e.g., "/projects/el-kenya")
   if (slug.length === 1) {
     // notFound();
-    redirect('/projects'); // Or redirect("/projects") if you want to send them back
+    redirect('/projects');
   }
 
   // Find the matching route
   const match = findRoute(slug, routeConfig);
 
-  // If no match is found, use the NotFound component.
   const Component = match ? match.component : notFound();
 
   return <Component slug={slug} routeParams={match.params} />;

@@ -6,7 +6,8 @@
     "./button": "./common/button.tsx",
     "./findRoute": "./utils/findRoute.ts",
     "./routeConfig": "./utils/routeConfig.ts",
-    "./projects": "./common/projects.tsx"
+    "./projects": "./common/projects.tsx",
+    "./search-input": "./common/search-input.tsx"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
@@ -14,15 +15,17 @@
     "check-types": "tsc --noEmit"
   },
   "devDependencies": {
-    "@workspace/eslint-config": "workspace:*",
-    "@workspace/typescript-config": "workspace:*",
     "@turbo/gen": "^2.4.0",
     "@types/node": "^22.13.0",
     "@types/react": "19.0.8",
     "@types/react-dom": "19.0.3",
-    "typescript": "5.7.3"
+    "@workspace/eslint-config": "workspace:*",
+    "@workspace/typescript-config": "workspace:*",
+    "typescript": "5.7.3",
+    "@rumsan/shadcn-ui": "workspace:*"
   },
   "dependencies": {
+    "lucide-react": "0.456.0",
     "next": "^15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

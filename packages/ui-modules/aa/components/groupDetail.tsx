@@ -1,7 +1,7 @@
-import { useParams } from "next/navigation";
+import { useParams } from 'next/navigation';
 
 export default function GroupDetail() {
-  const {segments} = useParams();
+  const { segments } = useParams();
   const groupId = segments?.[segments.length - 1];
-  return <h1>Group Detail: {groupId}</h1>;
+  return <div>Group Detail: {groupId}</div>;
 }

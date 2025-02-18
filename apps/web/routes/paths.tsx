@@ -75,6 +75,11 @@ export const defaultNavigations = [
     path: paths.dashboard.vendor,
     icon: 'Landmark',
   },
+  {
+    title: 'Users',
+    path: paths.user.root,
+    icon: 'Users',
+  },
 ];
 
 export const defaultSubNavigations = [
